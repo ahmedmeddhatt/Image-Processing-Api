@@ -11,8 +11,8 @@ describe('test my endpoint', ()=>{
     });
 
     it('process an image', async () => {
-              const imageResponse = await request.get('/api');
-              expect(imageResponse.statusCode).toBe(200);
+              const imageResponse = await request.get('/api?name=aaaaaaaa&width=700&height=700');
+              expect(imageResponse.status).toBe(200);
             });
 })
 

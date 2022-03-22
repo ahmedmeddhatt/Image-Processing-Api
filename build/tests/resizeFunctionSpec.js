@@ -68,17 +68,23 @@ describe('image testing', function () {
             }
         });
     }); });
-    //   it('if it is not successful image will not be resized ..', async () => {
-    //     try {
-    //       const result = await resizeImage(
-    //         imagePath,
-    //         falseWidth,
-    //         falseHeight,
-    //         resizedImagePath
-    //       );
-    //       expect(result).toThrowError();
-    //     } catch (error) {
-    //       console.log(error, `Error: the invalid image test failed`);
-    //     }
-    //   });
+    it('if it is not successful image will not be resized ..', function () { return __awaiter(void 0, void 0, void 0, function () {
+        var result, error_2;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, (0, resizeFunction_1.default)(imagePath, falseWidth, falseHeight, resizedImagePath)];
+                case 1:
+                    result = _a.sent();
+                    expect(result).toThrowError();
+                    return [3 /*break*/, 3];
+                case 2:
+                    error_2 = _a.sent();
+                    console.log(error_2, "Error: the invalid image test failed");
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
+            }
+        });
+    }); });
 });

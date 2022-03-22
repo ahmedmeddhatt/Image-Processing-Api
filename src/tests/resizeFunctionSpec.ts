@@ -26,17 +26,17 @@ describe('image testing', () => {
     }
   });
 
-//   it('if it is not successful image will not be resized ..', async () => {
-//     try {
-//       const result = await resizeImage(
-//         imagePath,
-//         falseWidth,
-//         falseHeight,
-//         resizedImagePath
-//       );
-//       expect(result).toThrowError();
-//     } catch (error) {
-//       console.log(error, `Error: the invalid image test failed`);
-//     }
-//   });
+  it('if it is not successful image will not be resized ..', async () => {
+    try {
+      const result = await resizeImage(
+        imagePath,
+        falseWidth,
+        falseHeight,
+        resizedImagePath
+      );
+      expect(result).toThrowError();
+    } catch (error) {
+      console.log(error, `Error: the invalid image test failed`);
+    }
+  });
 });

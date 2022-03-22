@@ -55,29 +55,19 @@ describe('test my endpoint', function () {
             }
         });
     }); });
-    it('Should Successfully Pass Test For Invalid Routing Request', function () { return __awaiter(void 0, void 0, void 0, function () {
-        var endpointResponse;
+    it('process an image', function () { return __awaiter(void 0, void 0, void 0, function () {
+        var imageResponse;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, request.get('/api')];
+                case 0: return [4 /*yield*/, request.get('/api?name=aaaaaaaa&width=700&height=700')];
                 case 1:
-                    endpointResponse = _a.sent();
-                    expect(endpointResponse.statusCode).toBe(200);
+                    imageResponse = _a.sent();
+                    expect(imageResponse.status).toBe(200);
                     return [2 /*return*/];
             }
         });
     }); });
 });
-// describe('Testing Api Home Routes', () => {
-//     it('Get Successful Responed To Home Page EndPoint Test Request', async () => {
-//       const endpointResponse = await request.get('/');
-//       expect(endpointResponse.statusCode).toBe(200);
-//     });
-//     it('Should Successfully Pass Test For Invalid Routing Request', async () => {
-//       const endpointResponse = await request.get('/api');
-//       expect(endpointResponse.statusCode).toBe(404);
-//     });
-//   });
 var path_1 = __importDefault(require("path"));
 var fs_extra_1 = __importDefault(require("fs-extra"));
 var validImageName = 'default';
