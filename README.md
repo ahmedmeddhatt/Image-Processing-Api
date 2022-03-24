@@ -12,4 +12,4 @@ SCRIPTS
 
 API CALL 
 =================================
-ex=> HTTP://localhost:3000/api?name=your image name&width=number >=1&height=number >=1 
+ex=> HTTP://localhost:3000/api?name=your_image_name&width=number>=1&height=number>=1 
