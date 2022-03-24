@@ -46,7 +46,7 @@ var resizeFunction_1 = __importDefault(require("./resizeFunction"));
 var sharp_1 = __importDefault(require("sharp"));
 var app = (0, express_1.default)();
 app.get('/', function (req, res) {
-    res.status(200).send('<br> For Using This Api To Resize An Image, Please Copy&Paste This Example With Your Data. <br><br>  Use This Example : <br> <br> [    HTTP://localhost:3000/api?name=your image name&width=number >=1&height=number >=1    ]');
+    res.status(200).send('<br> For Using This Api To Resize An Image, Please Copy&Paste This Example With Your Data. <br><br>  Use This Example : <br> <br> [    HTTP://localhost:3000/api?name=your_image_name&width=number>=1&height=number>=1    ]');
 });
 app.get('/api', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var name, width, height, original, resizedImagePath, metadata, resized, error_1;

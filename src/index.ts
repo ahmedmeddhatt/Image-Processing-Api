@@ -7,7 +7,7 @@ import sharp from 'sharp';
 const app: Application = express();
 
 app.get('/',  (req: Request, res: Response) => {
-  res.status(200).send('<br> For Using This Api To Resize An Image, Please Copy&Paste This Example With Your Data. <br><br>  Use This Example : <br> <br> [    HTTP://localhost:3000/api?name=your image name&width=number >=1&height=number >=1    ]')
+  res.status(200).send('<br> For Using This Api To Resize An Image, Please Copy&Paste This Example With Your Data. <br><br>  Use This Example : <br> <br> [    HTTP://localhost:3000/api?name=your_image_name&width=number>=1&height=number>=1    ]')
 })
 
 
