@@ -12,4 +12,9 @@ SCRIPTS
 
 API CALL 
 =================================
-ex=> HTTP://localhost:3000/api?name=your_image_name&width=number>=1&height=number>=1 
+
+HOME =>
+ HTTP://localhost:3000/
+
+RESIZING IMAGE =>
+ http://localhost:3000/api?name=default&width=700&height=700 

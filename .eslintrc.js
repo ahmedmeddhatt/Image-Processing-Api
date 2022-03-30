@@ -17,7 +17,6 @@ module.exports = {
         "@typescript-eslint", "prettier"
     ],
     "rules": {
-        "no console":2 ,
         "prettier/prettier":2
     }
 }
